@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Sign-up Form</title>
 </head>
 <body>
@@ -35,7 +36,7 @@
                     <input type="text" name="first-name" id="first-name">
                     <label for="email" id="email">EMAIL</label>
                     <input type="email" name="email" id="email">
-                    <label for="password" id="password">PASSWORD</label>
+                    <label for="password">PASSWORD</label>
                     <input type="password" name="password" id="password" required>
                 </div>
                 <div id="container">    
@@ -44,10 +45,12 @@
                     <label for="phone" id="phone">PHONE NUMBER</label>
                     <input type="text" name="phone" id="phone" minlength="11" maxlength="11" 
                     value="01234 567890">
-                    <label for="confirm-password" id="confirm">CONFIRM PASSWORD</label>
+                    <label for="confirm-password">CONFIRM PASSWORD</label>
                     <input type="password" name="confirm-password" id="confirm" required>
                 </div>
+                
             </fieldset>
+            <div class="password-warning"></div>
             </form>
         </div>
         <div class="bottom-section">

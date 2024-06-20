@@ -31,16 +31,18 @@ body {
 
 .top-section, .bottom-section {
     padding-left: 5vw;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .middle-section {
     background-color: #ffffff;
     box-shadow: 0 5px 5px lightgrey;
+    padding-bottom: 5vh;
 }
 
 .bottom-section {
     margin-bottom: auto;
+    margin-top: 20px;
 }
 
 #not-real {
@@ -67,14 +69,15 @@ fieldset {
     margin: 0;
     padding: 20px 0 0 5vw;
 }
+
 #container {
     display: flex;
     flex-direction: column;
     justify-content: left;
 }
 
-#last-name, #phone, #confirm {
-    /*margin-right: 20vw;*/
+#password, #confirm {
+ margin-bottom: 0px;
 }
 
 #odin-logo {
@@ -99,13 +102,17 @@ button {
     background-color: #596d48;
     border-radius: 5px;
     color: white;
-    padding: 10px 40px;
+    padding: 15px 40px;
     font-size: 1rem;
     font-weight: bold;
     border-style: none;
     box-shadow: 3px 3px 3px lightgray;
-    margin: 30px 0 30px;
+    margin: 20px 0 30px;
     
+}
+
+button:active {
+    background-color: #7d9965;
 }
 
 legend {
@@ -131,7 +138,7 @@ input {
 }
 
 input:invalid {
-    border-color: red
+    border-color: rgb(185, 0, 0);
 }
 
 input:focus {
@@ -140,6 +147,13 @@ input:focus {
     border-width: 1px;
     box-shadow: 5px 5px 5px lightgray ;
     outline: none;
+}
+
+.password-warning {
+    margin-left: 5vw;
+    color: rgb(185, 0, 0);
+    font-size: 0.8rem;
+    margin-top: 0px;
 }
 
 .log-in {
